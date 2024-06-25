@@ -10,6 +10,10 @@ app=Flask(__name__)
 def hola_mundo():
     return f"Hola mundo"
 
+@app.route('/ejecucion')
+def mis_proyectos():
+    return "Aqui se ejecuta el proyecto"
+
 #Ejercutar nuestra app cuando ejecutemos este archivo run.py
 
 if __name__=='__main__':
