@@ -6,13 +6,14 @@ app=Flask(__name__)
 
 #crear la ruta con su correspondientes funciones 
 
-@app.route('/')
+@app.route('/',methods=['GET'])
 def hola_mundo():
     return f"Hola mundo"
 
-@app.route('/ejecucion')
+@app.route('/ejecucion',methods=['GET'])  #indicamos el metodo GET
 def mis_proyectos():
     return "Aqui se ejecuta el proyecto"
+
 
 #Ejercutar nuestra app cuando ejecutemos este archivo run.py
 
