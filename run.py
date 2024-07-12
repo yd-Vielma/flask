@@ -19,7 +19,7 @@ def formulario():
 # mis proyectos
 @app.route('/mis_proyectos', methods=['GET'])
 def mis_proyectos():
-    return render_template('proyectos.html')
+    return "Aqui se ejecuta el proyecto"
 
 
 #Ejercutar nuestra app cuando ejecutemos este archivo run.py
